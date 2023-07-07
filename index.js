@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const apikey = "facca59aaf6429803a0a3b974b7bc9fb";
-    const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="; 
+    const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
     const searchbox = document.querySelector(".search input");
-    const searchbtn = document.querySelector(".search button");
+    let typingTimer; // Timer identifier
+    const typingDelay = 1000; // Delay in milliseconds
 
     async function checkweather(city) {
         const response = await fetch(apiurl + city + `&appid=${apikey}`);
@@ -21,7 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
     }
 
-    searchbtn.addEventListener("click", () => {
-        checkweather(searchbox.value);
+    searchbox.addEventListener("input", () => {
+        clearTimeout(typingTimer); // Clear the previous timer
+
+        typingTimer = setTimeout(() => {
+            checkweather(searchbox.value);
+        }, typingDelay);
     });
 });

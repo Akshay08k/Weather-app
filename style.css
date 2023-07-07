@@ -32,10 +32,10 @@
     outline: 0;
     background-color: #ebfffc;
     color: #555;
-    padding: 10px 20px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
+    text-align: center;
     margin-right: 16px;
     font-size: 18px;
   }
@@ -104,8 +104,9 @@
       width: 90%;
       margin-top: 50px;
     }
-     .search input {
-        padding: 5px;
+    
+    .search button{
+        
     }
   
     .header {
