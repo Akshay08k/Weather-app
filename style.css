@@ -1,29 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-body{
-    background: linear-gradient(to right,blue ,white, yellow);
-}
-.card{
+  }
+  
+  body {
+    background: linear-gradient(to right, blue, white, yellow);
+  }
+  
+  .card {
     width: 70%;
     max-width: 400px;
-    background: linear-gradient(to bottom, #6c757d, #007bff,white);;
+    background: linear-gradient(to bottom, #6c757d, #007bff, white);
     color: black;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-}
-.search{
+  }
+  
+  .search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.search input{
+  }
+  
+  .search input {
     border: 0;
     outline: 0;
     background-color: #ebfffc;
@@ -33,9 +37,10 @@ body{
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size:18px;
-}
-.search button{
+    font-size: 18px;
+  }
+  
+  .search button {
     border: 0;
     outline: 0;
     background-color: #ebfffc;
@@ -43,43 +48,73 @@ body{
     cursor: pointer;
     height: 60px;
     border-radius: 50%;
-}
-.search button:hover{
+  }
+  
+  .search button:hover {
     background-color: rgba(61, 119, 211, 0.752);
     color: black;
-}
-.weather h1{
+  }
+  
+  .weather h1 {
     font-size: 60px;
     font-weight: 500;
-}
-.weather h2{
+  }
+  
+  .weather h2 {
     font-size: 35px;
     font-weight: 400;
     margin-top: -10px;
-}
-.details{
+  }
+  
+  .details {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 15px;
-}
-.col{
+  }
+  
+  .col {
     display: flex;
     align-items: center;
     text-align: left;
-}
-.humidity , .wind{
-
+  }
+  
+  .humidity,
+  .wind {
     font-size: 38px;
     margin-top: 15px;
-}
-.weather{
+  }
+  
+  .weather {
     margin-top: 30px;
-}
-.header{
+  }
+  
+  .header {
     text-align: center;
     padding: 30px;
     font-size: 260%;
     color: black;
-}
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+      margin-top: 50px;
+    }
+  
+    .header {
+      font-size: 200%;
+    }
+  
+    .weather h1 {
+      font-size: 40px;
+    }
+  
+    .weather h2 {
+      font-size: 25px;
+    }
+  }
+  
