@@ -104,6 +104,9 @@
       width: 90%;
       margin-top: 50px;
     }
+     .search input {
+        padding: 5px;
+    }
   
     .header {
       font-size: 200%;
