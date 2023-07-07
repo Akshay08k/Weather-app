@@ -40,21 +40,6 @@
     font-size: 18px;
   }
   
-  .search button {
-    border: 0;
-    outline: 0;
-    background-color: #ebfffc;
-    width: 60px;
-    cursor: pointer;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-  .search button:hover {
-    background-color: rgba(61, 119, 211, 0.752);
-    color: black;
-  }
-  
   .weather h1 {
     font-size: 60px;
     font-weight: 500;
@@ -105,9 +90,7 @@
       margin-top: 50px;
     }
     
-    .search button{
-        
-    }
+
   
     .header {
       font-size: 200%;
