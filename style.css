@@ -90,7 +90,8 @@
       width: 90%;
       margin-top: 50px;
     }
-    .body{
+    body{
+      background: url(mobile.jpeg);
       background-size:cover;
     }
 
