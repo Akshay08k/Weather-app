@@ -6,7 +6,7 @@
   }
   
   body {
-    background: url(clouds-449822.jpg);
+    background: url(desktop.jpg);
     background-size: cover;
   }
   
@@ -90,7 +90,9 @@
       width: 90%;
       margin-top: 50px;
     }
-    
+    .body{
+      background-size:cover;
+    }
 
   
     .header {
