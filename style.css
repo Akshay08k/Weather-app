@@ -6,7 +6,7 @@
   }
   
   body {
-    background: url(desktop.jpg);
+    background: url(/images/desktop.jpg);
     background-size: cover;
   }
   
@@ -91,7 +91,7 @@
       margin-top: 50px;
     }
     body{
-      background: url(mobile.jpeg);
+      background: url(/images/mobile.jpeg);
       background-size:cover;
     }
 
