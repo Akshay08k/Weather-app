@@ -1,111 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: url(/images/desktop.jpg);
-    background-size: cover;
-  }
-  
-  .card {
-    width: 70%;
-    max-width: 400px;
-    background-color: rgba(0, 0, 0, 0.238);
-    color: black;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-  }
-  
-  .search {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .search input {
-    border: 0;
-    outline: 0;
-    background-color: #ebfffc;
-    color: #555;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    text-align: center;
-    margin-right: 16px;
-    font-size: 18px;
-  }
-  
-  .weather h1 {
-    font-size: 60px;
-    font-weight: 500;
-  }
-  
-  .weather h2 {
-    font-size: 35px;
-    font-weight: 400;
-    margin-top: -10px;
-  }
-  
-  .details {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 15px;
-  }
-  
-  .col {
-    display: flex;
-    align-items: center;
-    text-align: left;
-  }
-  
-  .humidity,
-  .wind {
-    font-size: 38px;
-    margin-top: 15px;
-  }
-  
-  .weather {
-    margin-top: 30px;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 30px;
-    font-size: 260%;
-    color: white;
-  }
-  
-  /* Mobile optimizations */
-  @media (max-width: 768px) {
-    .card {
-      width: 90%;
-      margin-top: 50px;
-    }
-    body{
-      background: url(/images/mobile.jpeg);
-      background-size:cover;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
-  
-    .header {
-      font-size: 200%;
-    }
-  
-    .weather h1 {
-      font-size: 40px;
-    }
-  
-    .weather h2 {
-      font-size: 25px;
-    }
+body {
+  background: url(/images/desktop.jpg);
+  background-size: cover;
+}
+
+.card {
+  width: 70%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.238);
+  color: black;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  color: #555;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  text-align: center;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.weather h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.humidity,
+.wind {
+  font-size: 38px;
+  margin-top: 15px;
+}
+
+.weather {
+  margin-top: 30px;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  font-size: 260%;
+  color: white;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin-top: 50px;
   }
-  
+  body {
+    background: url(/images/mobile.jpeg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header {
+    font-size: 200%;
+  }
+
+  .weather h1 {
+    font-size: 40px;
+  }
+
+  .weather h2 {
+    font-size: 25px;
+  }
+}
